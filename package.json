@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/JorgeArce95/modulo2-automation/issues"
   },
-  "homepage": "https://github.com/JorgeArce95/modulo2-automation#readme"
+  "homepage": "https://github.com/JorgeArce95/modulo2-automation#readme",
+  "devDependencies": {
+    "@wdio/cli": "^6.4.0"
+  }
 }
