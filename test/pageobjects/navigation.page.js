@@ -11,7 +11,7 @@ class navigationPage extends Page {
     //css query
     get conduitLabel () { return $('a.navbar-brand.ng-binding') }
    //lintext
-    get signInLink () { return $('=Sign in') }
+    get signInLink () { return $('a=Sign in') }
     //partialLinkText
     get signUpLink () { return $('*=up') }
 
