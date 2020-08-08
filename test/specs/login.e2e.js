@@ -29,8 +29,10 @@ describe('My Login application', () => {
 it('should open the other tap ', ()=>{
 
    DashboardPage.getGlobalFeedTap().click();
+   browser.pause(2000);
+   console.log('GetSize: ' +DashboardPage.getArticleList().length);
    expect(DashboardPage.getGlobalFeedTap()).toHaveClass('active', 'nav-link active')
-   
+   expect(DashboardPage.getArticleList()).toBeElementsArrayOfSize({eq: 10 });
 });
 
 });
