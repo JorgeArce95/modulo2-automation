@@ -21,11 +21,17 @@ describe('My Login application', () => {
 
 
     });
-it('should dispplay empty dashboard', ()=>{
+//it('should Your Feed active by default', ()=>{
 
-    expect(DashboardPage.getYourFeedTap()).toHaveAttribute('class', 'nav-link active')
+  //  expect(DashboardPage.getYourFeedTap()).toHaveAttribute('class', 'nav-link active')
    
-})
+//});
+it('should open the other tap ', ()=>{
+
+   DashboardPage.getGlobalFeedTap().click();
+   expect(DashboardPage.getGlobalFeedTap()).toHaveClass('active', 'nav-link active')
+   
+});
 
 });
 
