@@ -11,8 +11,10 @@ class DashBoardPage extends Page {
    // elemento con selector className y text
     get yourFeedTap () { return $('.nav-link=Your Feed')}
     get globalFeedTap () { return $('.nav-link=Global Feed')}
+    //concatenacion  de dos elementos
     get articlesRows() {  return $('<article-list />').$$('<article-preview />')}
-
+    
+    get articlesRowsReadMore() {  return $('<article-list />').$$('<article-preview />')[1].$('span=Read more...')}
 
    
 
@@ -36,6 +38,13 @@ getYourFeedTap()  {
         getArticleList()  {
 
             return this.articlesRows;
+            
+            }
+        
+
+        getReadMoreAnchor()  {
+
+            return this.articlesRowsReadMore;
             
             }
         }
